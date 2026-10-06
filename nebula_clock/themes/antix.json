@@ -1,0 +1,11 @@
+{
+  "description": "antiX-inspired terminal theme",
+  "title_text": "ANTIX",
+  "badge": "AX",
+  "digit": "#7B1FA2",
+  "date": "#A96DC3",
+  "title": "#5C177A",
+  "dim": "#4A1361",
+  "mid": "#7B1FA2",
+  "bright": "#FFFFFF"
+}

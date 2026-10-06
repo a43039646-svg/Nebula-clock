@@ -1,0 +1,11 @@
+{
+  "description": "elementary OS-inspired terminal theme",
+  "title_text": "ELEMENTARY OS",
+  "badge": "EL",
+  "digit": "#64BAA3",
+  "date": "#9AD2C3",
+  "title": "#4B8C7A",
+  "dim": "#3C7062",
+  "mid": "#64BAA3",
+  "bright": "#FFFFFF"
+}

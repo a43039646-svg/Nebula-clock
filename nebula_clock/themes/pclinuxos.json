@@ -1,0 +1,11 @@
+{
+  "description": "PCLinuxOS-inspired terminal theme",
+  "title_text": "PCLINUXOS",
+  "badge": "PC",
+  "digit": "#1A6DD3",
+  "date": "#6AA0E2",
+  "title": "#14529E",
+  "dim": "#10417F",
+  "mid": "#1A6DD3",
+  "bright": "#FFFFFF"
+}

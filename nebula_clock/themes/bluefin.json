@@ -1,0 +1,11 @@
+{
+  "description": "Bluefin-inspired terminal theme",
+  "title_text": "BLUEFIN",
+  "badge": "BL",
+  "digit": "#4EA5FF",
+  "date": "#8CC4FF",
+  "title": "#3A7CBF",
+  "dim": "#2F6399",
+  "mid": "#4EA5FF",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "4MLinux-inspired terminal theme",
+  "title_text": "4MLINUX",
+  "badge": "4M",
+  "digit": "#4CAF50",
+  "date": "#8BCB8D",
+  "title": "#39833C",
+  "dim": "#2E6930",
+  "mid": "#4CAF50",
+  "bright": "#FFFFFF"
+}

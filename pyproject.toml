@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nebula-clock"
+version = "2.0.0"
+description = "A lightweight customizable terminal clock and rice utility for Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "EPL-2.0"}
+authors = [{name = "nebula-clock contributors"}]
+
+[project.scripts]
+nebula-clock = "nebula_clock.main:main"
+
+[tool.setuptools.packages.find]
+include = ["nebula_clock*"]
+
+[tool.setuptools.package-data]
+nebula_clock = ["themes/*.json"]

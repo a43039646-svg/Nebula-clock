@@ -1,0 +1,11 @@
+{
+  "description": "Guix System-inspired terminal theme",
+  "title_text": "GUIX SYSTEM",
+  "badge": "GX",
+  "digit": "#FFCC00",
+  "date": "#FFDE59",
+  "title": "#BF9900",
+  "dim": "#997A00",
+  "mid": "#FFCC00",
+  "bright": "#FFFFFF"
+}

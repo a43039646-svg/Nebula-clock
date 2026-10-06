@@ -1,0 +1,11 @@
+{
+  "description": "Mageia-inspired terminal theme",
+  "title_text": "MAGEIA",
+  "badge": "MG",
+  "digit": "#2397D2",
+  "date": "#70BBE2",
+  "title": "#1A719E",
+  "dim": "#155B7E",
+  "mid": "#2397D2",
+  "bright": "#FFFFFF"
+}

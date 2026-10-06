@@ -1,0 +1,11 @@
+{
+  "description": "Bazzite-inspired terminal theme",
+  "title_text": "BAZZITE",
+  "badge": "BZ",
+  "digit": "#E34F26",
+  "date": "#ED8D72",
+  "title": "#AA3B1C",
+  "dim": "#882F17",
+  "mid": "#E34F26",
+  "bright": "#FFFFFF"
+}

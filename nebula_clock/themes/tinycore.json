@@ -1,0 +1,11 @@
+{
+  "description": "Tiny Core Linux-inspired terminal theme",
+  "title_text": "TINY CORE LINUX",
+  "badge": "TC",
+  "digit": "#2C3E50",
+  "date": "#76828D",
+  "title": "#212E3C",
+  "dim": "#1A2530",
+  "mid": "#2C3E50",
+  "bright": "#FFFFFF"
+}

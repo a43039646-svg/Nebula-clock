@@ -1,0 +1,11 @@
+{
+  "description": "Gentoo Linux-inspired terminal theme",
+  "title_text": "GENTOO LINUX",
+  "badge": "GE",
+  "digit": "#54487A",
+  "date": "#9088A9",
+  "title": "#3F365C",
+  "dim": "#322B49",
+  "mid": "#54487A",
+  "bright": "#FFFFFF"
+}

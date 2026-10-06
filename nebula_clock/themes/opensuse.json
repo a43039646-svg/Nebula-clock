@@ -1,0 +1,11 @@
+{
+  "description": "openSUSE-inspired terminal theme",
+  "title_text": "OPENSUSE",
+  "badge": "OS",
+  "digit": "#73BA25",
+  "date": "#A4D271",
+  "title": "#568C1C",
+  "dim": "#457016",
+  "mid": "#73BA25",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Bodhi Linux-inspired terminal theme",
+  "title_text": "BODHI LINUX",
+  "badge": "BO",
+  "digit": "#F2B134",
+  "date": "#F7CC7B",
+  "title": "#B68527",
+  "dim": "#916A1F",
+  "mid": "#F2B134",
+  "bright": "#FFFFFF"
+}

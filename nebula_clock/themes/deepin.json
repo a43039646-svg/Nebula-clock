@@ -1,0 +1,11 @@
+{
+  "description": "deepin-inspired terminal theme",
+  "title_text": "DEEPIN",
+  "badge": "DI",
+  "digit": "#4C91F7",
+  "date": "#8BB8FA",
+  "title": "#396DB9",
+  "dim": "#2E5794",
+  "mid": "#4C91F7",
+  "bright": "#FFFFFF"
+}

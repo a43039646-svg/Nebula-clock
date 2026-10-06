@@ -1,0 +1,11 @@
+{
+  "description": "Whonix-inspired terminal theme",
+  "title_text": "WHONIX",
+  "badge": "WH",
+  "digit": "#8A2BE2",
+  "date": "#B375EC",
+  "title": "#6820AA",
+  "dim": "#531A88",
+  "mid": "#8A2BE2",
+  "bright": "#FFFFFF"
+}

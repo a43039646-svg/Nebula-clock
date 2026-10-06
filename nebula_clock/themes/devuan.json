@@ -1,0 +1,11 @@
+{
+  "description": "Devuan-inspired terminal theme",
+  "title_text": "DEVUAN",
+  "badge": "DV",
+  "digit": "#5A3E85",
+  "date": "#9482B0",
+  "title": "#442E64",
+  "dim": "#362550",
+  "mid": "#5A3E85",
+  "bright": "#FFFFFF"
+}

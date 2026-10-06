@@ -1,0 +1,11 @@
+{
+  "description": "Debian-inspired terminal theme",
+  "title_text": "DEBIAN",
+  "badge": "DE",
+  "digit": "#CE0056",
+  "date": "#DF5991",
+  "title": "#9A0040",
+  "dim": "#7C0034",
+  "mid": "#CE0056",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Peppermint Devuan-inspired terminal theme",
+  "title_text": "PEPPERMINT DEVUAN",
+  "badge": "PD",
+  "digit": "#C62828",
+  "date": "#DA7373",
+  "title": "#941E1E",
+  "dim": "#771818",
+  "mid": "#C62828",
+  "bright": "#FFFFFF"
+}

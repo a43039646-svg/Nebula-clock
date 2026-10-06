@@ -1,0 +1,11 @@
+{
+  "description": "Slackware-inspired terminal theme",
+  "title_text": "SLACKWARE",
+  "badge": "SL",
+  "digit": "#3F8DCC",
+  "date": "#82B5DE",
+  "title": "#2F6A99",
+  "dim": "#26557A",
+  "mid": "#3F8DCC",
+  "bright": "#FFFFFF"
+}

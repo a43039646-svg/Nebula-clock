@@ -1,0 +1,60 @@
+{
+  "theme": "auto",
+  "display": {
+    "show_seconds": true,
+    "show_date": true,
+    "show_title": true,
+    "scale": "auto",
+    "font": "digital",
+    "block": "█",
+    "fallback_block": "#"
+  },
+  "logo": {
+    "enabled": false,
+    "source": "auto",
+    "position": "right",
+    "custom": ""
+  },
+  "fetch": {
+    "enabled": false,
+    "box": false,
+    "position": "left"
+  },
+  "clock_box": {
+    "enabled": false,
+    "style": "rounded"
+  },
+  "custom_text": {
+    "enabled": false,
+    "text": "Have a nice day!",
+    "position": "bottom"
+  },
+  "colors": {
+    "clock": "#FFFFFF",
+    "date": "#7fdfff",
+    "title": "#00bfff",
+    "box": "#5CC8FF",
+    "logo": "#FFFFFF",
+    "fetch": "#7fdfff",
+    "custom_text": "#ffffff"
+  },
+  "animation": {
+    "stars": true,
+    "star_density": 1.0,
+    "star_speed": 1.0,
+    "star_life_min": 14,
+    "star_life_max": 45,
+    "logo": {
+      "enabled": true,
+      "type": "fade",
+      "interval": 6.0,
+      "duration": 2.5
+    },
+    "custom_text": {
+      "enabled": false,
+      "type": "fade",
+      "interval": 8.0,
+      "duration": 2.5
+    }
+  }
+}

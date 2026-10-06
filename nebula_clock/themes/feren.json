@@ -1,0 +1,11 @@
+{
+  "description": "Feren OS-inspired terminal theme",
+  "title_text": "FEREN OS",
+  "badge": "FR",
+  "digit": "#2F80ED",
+  "date": "#78ACF3",
+  "title": "#2360B2",
+  "dim": "#1C4D8E",
+  "mid": "#2F80ED",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Ubuntu MATE-inspired terminal theme",
+  "title_text": "UBUNTU MATE",
+  "badge": "UM",
+  "digit": "#77B300",
+  "date": "#A7CE59",
+  "title": "#598600",
+  "dim": "#476B00",
+  "mid": "#77B300",
+  "bright": "#FFFFFF"
+}

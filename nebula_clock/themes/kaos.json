@@ -1,0 +1,11 @@
+{
+  "description": "KaOS-inspired terminal theme",
+  "title_text": "KAOS",
+  "badge": "KS",
+  "digit": "#007ACC",
+  "date": "#59A9DE",
+  "title": "#005C99",
+  "dim": "#00497A",
+  "mid": "#007ACC",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Slax-inspired terminal theme",
+  "title_text": "SLAX",
+  "badge": "SX",
+  "digit": "#4CBB17",
+  "date": "#8BD368",
+  "title": "#398C11",
+  "dim": "#2E700E",
+  "mid": "#4CBB17",
+  "bright": "#FFFFFF"
+}

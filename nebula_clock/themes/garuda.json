@@ -1,0 +1,11 @@
+{
+  "description": "Garuda Linux-inspired terminal theme",
+  "title_text": "GARUDA LINUX",
+  "badge": "GA",
+  "digit": "#6F2DBD",
+  "date": "#A176D4",
+  "title": "#53228E",
+  "dim": "#431B71",
+  "mid": "#6F2DBD",
+  "bright": "#FFFFFF"
+}

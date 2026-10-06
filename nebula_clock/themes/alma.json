@@ -1,0 +1,11 @@
+{
+  "description": "AlmaLinux-inspired terminal theme",
+  "title_text": "ALMALINUX",
+  "badge": "ALM",
+  "digit": "#0F4C81",
+  "date": "#638BAD",
+  "title": "#0B3961",
+  "dim": "#092E4D",
+  "mid": "#0F4C81",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "CRUX-inspired terminal theme",
+  "title_text": "CRUX",
+  "badge": "CR",
+  "digit": "#E0E0E0",
+  "date": "#EBEBEB",
+  "title": "#A8A8A8",
+  "dim": "#868686",
+  "mid": "#E0E0E0",
+  "bright": "#FFFFFF"
+}

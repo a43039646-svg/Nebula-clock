@@ -1,0 +1,11 @@
+{
+  "description": "TUXEDO OS-inspired terminal theme",
+  "title_text": "TUXEDO OS",
+  "badge": "TX",
+  "digit": "#111827",
+  "date": "#646973",
+  "title": "#0D121D",
+  "dim": "#0A0E17",
+  "mid": "#111827",
+  "bright": "#FFFFFF"
+}

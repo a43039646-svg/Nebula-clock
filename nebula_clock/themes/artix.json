@@ -1,0 +1,11 @@
+{
+  "description": "Artix Linux-inspired terminal theme",
+  "title_text": "ARTIX LINUX",
+  "badge": "AT",
+  "digit": "#10A0CC",
+  "date": "#64C1DE",
+  "title": "#0C7899",
+  "dim": "#0A607A",
+  "mid": "#10A0CC",
+  "bright": "#FFFFFF"
+}

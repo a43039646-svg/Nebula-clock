@@ -1,0 +1,11 @@
+{
+  "description": "OpenWrt-inspired terminal theme",
+  "title_text": "OPENWRT",
+  "badge": "OW",
+  "digit": "#00A1E4",
+  "date": "#59C2ED",
+  "title": "#0079AB",
+  "dim": "#006189",
+  "mid": "#00A1E4",
+  "bright": "#FFFFFF"
+}

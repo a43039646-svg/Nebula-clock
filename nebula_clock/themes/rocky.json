@@ -1,0 +1,11 @@
+{
+  "description": "Rocky Linux-inspired terminal theme",
+  "title_text": "ROCKY LINUX",
+  "badge": "RK",
+  "digit": "#10B981",
+  "date": "#64D2AD",
+  "title": "#0C8B61",
+  "dim": "#0A6F4D",
+  "mid": "#10B981",
+  "bright": "#FFFFFF"
+}

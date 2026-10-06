@@ -1,0 +1,11 @@
+{
+  "description": "LibreELEC-inspired terminal theme",
+  "title_text": "LIBREELEC",
+  "badge": "LE",
+  "digit": "#FF7800",
+  "date": "#FFA759",
+  "title": "#BF5A00",
+  "dim": "#994800",
+  "mid": "#FF7800",
+  "bright": "#FFFFFF"
+}

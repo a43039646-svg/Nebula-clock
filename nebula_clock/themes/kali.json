@@ -1,0 +1,11 @@
+{
+  "description": "Kali Linux-inspired terminal theme",
+  "title_text": "KALI LINUX",
+  "badge": "KL",
+  "digit": "#557C94",
+  "date": "#90AAB9",
+  "title": "#405D6F",
+  "dim": "#334A59",
+  "mid": "#557C94",
+  "bright": "#FFFFFF"
+}

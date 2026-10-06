@@ -1,0 +1,11 @@
+{
+  "description": "Voyager-inspired terminal theme",
+  "title_text": "VOYAGER",
+  "badge": "VG",
+  "digit": "#4C6FFF",
+  "date": "#8BA1FF",
+  "title": "#3953BF",
+  "dim": "#2E4399",
+  "mid": "#4C6FFF",
+  "bright": "#FFFFFF"
+}

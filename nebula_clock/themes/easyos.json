@@ -1,0 +1,11 @@
+{
+  "description": "EasyOS-inspired terminal theme",
+  "title_text": "EASYOS",
+  "badge": "EZ",
+  "digit": "#3B82F6",
+  "date": "#80AEF9",
+  "title": "#2C62B8",
+  "dim": "#234E94",
+  "mid": "#3B82F6",
+  "bright": "#FFFFFF"
+}

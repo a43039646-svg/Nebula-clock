@@ -1,0 +1,11 @@
+{
+  "description": "Edubuntu-inspired terminal theme",
+  "title_text": "EDUBUNTU",
+  "badge": "ED",
+  "digit": "#F28E2B",
+  "date": "#F7B675",
+  "title": "#B66A20",
+  "dim": "#91551A",
+  "mid": "#F28E2B",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Endless OS-inspired terminal theme",
+  "title_text": "ENDLESS OS",
+  "badge": "EN",
+  "digit": "#4C4CFF",
+  "date": "#8B8BFF",
+  "title": "#3939BF",
+  "dim": "#2E2E99",
+  "mid": "#4C4CFF",
+  "bright": "#FFFFFF"
+}

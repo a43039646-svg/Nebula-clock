@@ -1,0 +1,11 @@
+{
+  "description": "Batocera-inspired terminal theme",
+  "title_text": "BATOCERA",
+  "badge": "BA",
+  "digit": "#8E44AD",
+  "date": "#B685CA",
+  "title": "#6A3382",
+  "dim": "#552968",
+  "mid": "#8E44AD",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Clear Linux-inspired terminal theme",
+  "title_text": "CLEAR LINUX",
+  "badge": "CL",
+  "digit": "#0068B5",
+  "date": "#599DCF",
+  "title": "#004E88",
+  "dim": "#003E6D",
+  "mid": "#0068B5",
+  "bright": "#FFFFFF"
+}

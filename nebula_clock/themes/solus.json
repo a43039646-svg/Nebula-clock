@@ -1,0 +1,11 @@
+{
+  "description": "Solus-inspired terminal theme",
+  "title_text": "SOLUS",
+  "badge": "SO",
+  "digit": "#5294E2",
+  "date": "#8FB9EC",
+  "title": "#3E6FAA",
+  "dim": "#315988",
+  "mid": "#5294E2",
+  "bright": "#FFFFFF"
+}

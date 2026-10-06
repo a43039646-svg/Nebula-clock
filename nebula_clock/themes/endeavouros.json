@@ -1,0 +1,11 @@
+{
+  "description": "EndeavourOS-inspired terminal theme",
+  "title_text": "ENDEAVOUROS",
+  "badge": "EO",
+  "digit": "#7C3AED",
+  "date": "#AA7FF3",
+  "title": "#5D2CB2",
+  "dim": "#4A238E",
+  "mid": "#7C3AED",
+  "bright": "#FFFFFF"
+}

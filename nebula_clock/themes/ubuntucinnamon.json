@@ -1,0 +1,11 @@
+{
+  "description": "Ubuntu Cinnamon-inspired terminal theme",
+  "title_text": "UBUNTU CINNAMON",
+  "badge": "UC",
+  "digit": "#DD4814",
+  "date": "#E98866",
+  "title": "#A6360F",
+  "dim": "#852B0C",
+  "mid": "#DD4814",
+  "bright": "#FFFFFF"
+}

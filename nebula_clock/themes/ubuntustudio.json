@@ -1,0 +1,11 @@
+{
+  "description": "Ubuntu Studio-inspired terminal theme",
+  "title_text": "UBUNTU STUDIO",
+  "badge": "US",
+  "digit": "#203040",
+  "date": "#6E7883",
+  "title": "#182430",
+  "dim": "#131D26",
+  "mid": "#203040",
+  "bright": "#FFFFFF"
+}

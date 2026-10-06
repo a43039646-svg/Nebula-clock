@@ -1,0 +1,11 @@
+{
+  "description": "ArchBang-inspired terminal theme",
+  "title_text": "ARCHBANG",
+  "badge": "AB",
+  "digit": "#1FA2FF",
+  "date": "#6DC3FF",
+  "title": "#177ABF",
+  "dim": "#136199",
+  "mid": "#1FA2FF",
+  "bright": "#FFFFFF"
+}

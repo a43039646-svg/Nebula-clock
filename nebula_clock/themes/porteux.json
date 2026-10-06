@@ -1,0 +1,11 @@
+{
+  "description": "PorteuX-inspired terminal theme",
+  "title_text": "PORTEUX",
+  "badge": "PX",
+  "digit": "#0088CC",
+  "date": "#59B2DE",
+  "title": "#006699",
+  "dim": "#00527A",
+  "mid": "#0088CC",
+  "bright": "#FFFFFF"
+}

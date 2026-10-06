@@ -1,0 +1,11 @@
+{
+  "description": "OpenMandriva-inspired terminal theme",
+  "title_text": "OPENMANDRIVA",
+  "badge": "OM",
+  "digit": "#0099CC",
+  "date": "#59BDDE",
+  "title": "#007399",
+  "dim": "#005C7A",
+  "mid": "#0099CC",
+  "bright": "#FFFFFF"
+}

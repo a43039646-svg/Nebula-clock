@@ -1,0 +1,11 @@
+{
+  "description": "Manjaro-inspired terminal theme",
+  "title_text": "MANJARO",
+  "badge": "MA",
+  "digit": "#35BF5C",
+  "date": "#7CD595",
+  "title": "#288F45",
+  "dim": "#207337",
+  "mid": "#35BF5C",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Finnix-inspired terminal theme",
+  "title_text": "FINNIX",
+  "badge": "FI",
+  "digit": "#009688",
+  "date": "#59BBB2",
+  "title": "#007066",
+  "dim": "#005A52",
+  "mid": "#009688",
+  "bright": "#FFFFFF"
+}

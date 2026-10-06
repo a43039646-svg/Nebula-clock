@@ -1,0 +1,11 @@
+{
+  "description": "Trisquel-inspired terminal theme",
+  "title_text": "TRISQUEL",
+  "badge": "TR",
+  "digit": "#005BBB",
+  "date": "#5994D3",
+  "title": "#00448C",
+  "dim": "#003770",
+  "mid": "#005BBB",
+  "bright": "#FFFFFF"
+}

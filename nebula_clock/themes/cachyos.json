@@ -1,0 +1,11 @@
+{
+  "description": "CachyOS-inspired terminal theme",
+  "title_text": "CACHYOS",
+  "badge": "CA",
+  "digit": "#00AA88",
+  "date": "#59C8B2",
+  "title": "#008066",
+  "dim": "#006652",
+  "mid": "#00AA88",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "NixOS-inspired terminal theme",
+  "title_text": "NIXOS",
+  "badge": "NI",
+  "digit": "#5277C3",
+  "date": "#8FA7D8",
+  "title": "#3E5992",
+  "dim": "#314775",
+  "mid": "#5277C3",
+  "bright": "#FFFFFF"
+}

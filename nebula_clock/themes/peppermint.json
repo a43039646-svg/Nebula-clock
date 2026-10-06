@@ -1,0 +1,11 @@
+{
+  "description": "Peppermint OS-inspired terminal theme",
+  "title_text": "PEPPERMINT OS",
+  "badge": "PE",
+  "digit": "#E53935",
+  "date": "#EE7E7C",
+  "title": "#AC2B28",
+  "dim": "#892220",
+  "mid": "#E53935",
+  "bright": "#FFFFFF"
+}

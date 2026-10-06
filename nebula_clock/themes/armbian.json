@@ -1,0 +1,11 @@
+{
+  "description": "Armbian-inspired terminal theme",
+  "title_text": "ARMBIAN",
+  "badge": "AR2",
+  "digit": "#F56A00",
+  "date": "#F89E59",
+  "title": "#B85000",
+  "dim": "#934000",
+  "mid": "#F56A00",
+  "bright": "#FFFFFF"
+}

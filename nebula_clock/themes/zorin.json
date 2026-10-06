@@ -1,0 +1,11 @@
+{
+  "description": "Zorin OS-inspired terminal theme",
+  "title_text": "ZORIN OS",
+  "badge": "ZO",
+  "digit": "#15A6E0",
+  "date": "#67C5EB",
+  "title": "#107CA8",
+  "dim": "#0D6486",
+  "mid": "#15A6E0",
+  "bright": "#FFFFFF"
+}

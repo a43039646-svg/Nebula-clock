@@ -1,0 +1,11 @@
+{
+  "description": "PureOS-inspired terminal theme",
+  "title_text": "PUREOS",
+  "badge": "PR",
+  "digit": "#5B2C83",
+  "date": "#9476AE",
+  "title": "#442162",
+  "dim": "#371A4F",
+  "mid": "#5B2C83",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Alpine Linux-inspired terminal theme",
+  "title_text": "ALPINE LINUX",
+  "badge": "AL",
+  "digit": "#0D597F",
+  "date": "#6293AC",
+  "title": "#0A435F",
+  "dim": "#08354C",
+  "mid": "#0D597F",
+  "bright": "#FFFFFF"
+}

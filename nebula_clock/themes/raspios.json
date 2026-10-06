@@ -1,0 +1,11 @@
+{
+  "description": "Raspberry Pi OS-inspired terminal theme",
+  "title_text": "RASPBERRY PI OS",
+  "badge": "RP",
+  "digit": "#C51A4A",
+  "date": "#D96A89",
+  "title": "#941438",
+  "dim": "#76102C",
+  "mid": "#C51A4A",
+  "bright": "#FFFFFF"
+}

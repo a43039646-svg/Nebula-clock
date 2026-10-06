@@ -1,0 +1,11 @@
+{
+  "description": "Qubes OS-inspired terminal theme",
+  "title_text": "QUBES OS",
+  "badge": "QU",
+  "digit": "#3874C8",
+  "date": "#7EA5DB",
+  "title": "#2A5796",
+  "dim": "#224678",
+  "mid": "#3874C8",
+  "bright": "#FFFFFF"
+}

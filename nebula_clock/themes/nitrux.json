@@ -1,0 +1,11 @@
+{
+  "description": "Nitrux-inspired terminal theme",
+  "title_text": "NITRUX",
+  "badge": "NX",
+  "digit": "#FF5A36",
+  "date": "#FF947C",
+  "title": "#BF4428",
+  "dim": "#993620",
+  "mid": "#FF5A36",
+  "bright": "#FFFFFF"
+}

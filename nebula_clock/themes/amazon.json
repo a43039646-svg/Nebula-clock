@@ -1,0 +1,11 @@
+{
+  "description": "Amazon Linux-inspired terminal theme",
+  "title_text": "AMAZON LINUX",
+  "badge": "AM",
+  "digit": "#FF9900",
+  "date": "#FFBD59",
+  "title": "#BF7300",
+  "dim": "#995C00",
+  "mid": "#FF9900",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "BlackArch-inspired terminal theme",
+  "title_text": "BLACKARCH",
+  "badge": "BK",
+  "digit": "#111111",
+  "date": "#646464",
+  "title": "#0D0D0D",
+  "dim": "#0A0A0A",
+  "mid": "#111111",
+  "bright": "#FFFFFF"
+}

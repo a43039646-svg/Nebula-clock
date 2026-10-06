@@ -1,0 +1,11 @@
+{
+  "description": "blendOS-inspired terminal theme",
+  "title_text": "BLENDOS",
+  "badge": "BD",
+  "digit": "#1F2937",
+  "date": "#6D747D",
+  "title": "#171F29",
+  "dim": "#131921",
+  "mid": "#1F2937",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Funtoo-inspired terminal theme",
+  "title_text": "FUNTOO",
+  "badge": "FU",
+  "digit": "#FF6600",
+  "date": "#FF9C59",
+  "title": "#BF4C00",
+  "dim": "#993D00",
+  "mid": "#FF6600",
+  "bright": "#FFFFFF"
+}

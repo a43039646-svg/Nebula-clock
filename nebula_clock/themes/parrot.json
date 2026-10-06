@@ -1,0 +1,11 @@
+{
+  "description": "Parrot OS-inspired terminal theme",
+  "title_text": "PARROT OS",
+  "badge": "PA",
+  "digit": "#00A4B8",
+  "date": "#59C4D1",
+  "title": "#007B8A",
+  "dim": "#00626E",
+  "mid": "#00A4B8",
+  "bright": "#FFFFFF"
+}

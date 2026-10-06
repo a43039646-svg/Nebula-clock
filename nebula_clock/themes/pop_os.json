@@ -1,0 +1,11 @@
+{
+  "description": "Pop!_OS-inspired terminal theme",
+  "title_text": "POP!_OS",
+  "badge": "PO",
+  "digit": "#48B9C7",
+  "date": "#88D2DB",
+  "title": "#368B95",
+  "dim": "#2B6F77",
+  "mid": "#48B9C7",
+  "bright": "#FFFFFF"
+}

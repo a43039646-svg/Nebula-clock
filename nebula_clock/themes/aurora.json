@@ -1,0 +1,11 @@
+{
+  "description": "Aurora-inspired terminal theme",
+  "title_text": "AURORA",
+  "badge": "AU",
+  "digit": "#6C63FF",
+  "date": "#9F9AFF",
+  "title": "#514ABF",
+  "dim": "#413B99",
+  "mid": "#6C63FF",
+  "bright": "#FFFFFF"
+}

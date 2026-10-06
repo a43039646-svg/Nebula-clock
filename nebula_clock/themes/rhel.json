@@ -1,0 +1,11 @@
+{
+  "description": "Red Hat Enterprise Linux-inspired terminal theme",
+  "title_text": "RED HAT ENTERPRISE LINUX",
+  "badge": "RH",
+  "digit": "#EE0000",
+  "date": "#F45959",
+  "title": "#B20000",
+  "dim": "#8F0000",
+  "mid": "#EE0000",
+  "bright": "#FFFFFF"
+}

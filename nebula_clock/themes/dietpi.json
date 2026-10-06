@@ -1,0 +1,11 @@
+{
+  "description": "DietPi-inspired terminal theme",
+  "title_text": "DIETPI",
+  "badge": "DP",
+  "digit": "#A8CD1B",
+  "date": "#C6DE6B",
+  "title": "#7E9A14",
+  "dim": "#657B10",
+  "mid": "#A8CD1B",
+  "bright": "#FFFFFF"
+}

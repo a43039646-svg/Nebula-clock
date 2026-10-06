@@ -1,0 +1,11 @@
+{
+  "description": "Tails-inspired terminal theme",
+  "title_text": "TAILS",
+  "badge": "TA",
+  "digit": "#56347C",
+  "date": "#917BAA",
+  "title": "#40275D",
+  "dim": "#341F4A",
+  "mid": "#56347C",
+  "bright": "#FFFFFF"
+}

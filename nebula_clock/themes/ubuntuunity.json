@@ -1,0 +1,11 @@
+{
+  "description": "Ubuntu Unity-inspired terminal theme",
+  "title_text": "UBUNTU UNITY",
+  "badge": "UU",
+  "digit": "#E95420",
+  "date": "#F1906E",
+  "title": "#AF3F18",
+  "dim": "#8C3213",
+  "mid": "#E95420",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "SteamOS-inspired terminal theme",
+  "title_text": "STEAMOS",
+  "badge": "ST",
+  "digit": "#1B2838",
+  "date": "#6B737E",
+  "title": "#141E2A",
+  "dim": "#101822",
+  "mid": "#1B2838",
+  "bright": "#FFFFFF"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "KDE neon-inspired terminal theme",
+  "title_text": "KDE NEON",
+  "badge": "KN",
+  "digit": "#1D99F3",
+  "date": "#6CBDF7",
+  "title": "#1673B6",
+  "dim": "#115C92",
+  "mid": "#1D99F3",
+  "bright": "#FFFFFF"
+}
