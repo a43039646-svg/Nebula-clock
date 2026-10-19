@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import sys
+
+sys.path.insert(0, "/usr/lib/nebula-clock")
+
+from nebula_clock.main import main
+
+raise SystemExit(main())
