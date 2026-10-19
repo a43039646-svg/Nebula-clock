@@ -20,8 +20,9 @@ jobs:
       - name: Build packages
         run: |
           cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/usr
-          cmake --build build --target package
-          cpack --config build/CPackConfig.cmake -G RPM
+          cpack --config build/CPackConfig.cmake -G DEB -B build
+          cpack --config build/CPackConfig.cmake -G RPM -B build
+          cpack --config build/CPackConfig.cmake -G TGZ -B build
       - uses: actions/upload-artifact@v4
         with:
           name: nebula-clock-linux-packages
