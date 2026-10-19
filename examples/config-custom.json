@@ -10,13 +10,14 @@
     "fallback_block": "#"
   },
   "logo": {
-    "enabled": false,
+    "enabled": true,
     "source": "auto",
-    "position": "right",
+    "position": "above_fetch",
+    "use_glyph": false,
     "custom": ""
   },
   "fetch": {
-    "enabled": false,
+    "enabled": true,
     "box": false,
     "position": "left"
   },
