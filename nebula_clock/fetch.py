@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import os
 import platform
+import time
+from functools import lru_cache
 from pathlib import Path
 
 
@@ -18,6 +20,7 @@ def _read_os_release() -> dict[str, str]:
     return values
 
 
+@lru_cache(maxsize=1)
 def _cpu_model() -> str:
     try:
         lines = Path("/proc/cpuinfo").read_text(encoding="utf-8", errors="ignore").splitlines()
@@ -62,10 +65,18 @@ def _uptime() -> str:
         return "Unknown"
 
 
+_FETCH_CACHE: dict[str, tuple[float, list[tuple[str, str]]]] = {}
+
+
 def collect(theme_name: str) -> list[tuple[str, str]]:
+    now = time.monotonic()
+    cached = _FETCH_CACHE.get(theme_name)
+    if cached and now - cached[0] < 2.0:
+        return list(cached[1])
+
     os_data = _read_os_release()
     distro = os_data.get("PRETTY_NAME") or theme_name.replace("_", " ").title()
-    return [
+    items = [
         ("OS", distro),
         ("Kernel", platform.release()),
         ("CPU", _cpu_model()),
@@ -73,3 +84,5 @@ def collect(theme_name: str) -> list[tuple[str, str]]:
         ("Uptime", _uptime()),
         ("Cores", str(os.cpu_count() or 1)),
     ]
+    _FETCH_CACHE[theme_name] = (now, items)
+    return list(items)

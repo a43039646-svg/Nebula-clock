@@ -54,7 +54,7 @@ nebula-clock
 
 ## ⚙️ Configuration
 
-The normal first launch is intentionally simple. Extra features are optional.
+The default first-run layout shows a compact distro badge above Mini Fetch on the left and keeps the clock centered. You can turn either panel off in the config.
 
 Create the user config with:
 
@@ -83,11 +83,12 @@ Example:
   "logo": {
     "enabled": true,
     "source": "auto",
-    "position": "right"
+    "position": "above_fetch",
+    "use_glyph": false
   },
   "fetch": {
     "enabled": true,
-    "box": true,
+    "box": false,
     "position": "left"
   },
   "clock_box": {
@@ -141,13 +142,14 @@ Set the font with:
 
 ## 🐧 Distro logos
 
-The logo can follow the detected distro automatically:
+The logo can follow the detected distro automatically. Set `position` to `above_fetch` for a small, font-independent distro badge above the left Mini Fetch panel. The logo uses a short text fallback by default, so it remains visible without Nerd Fonts. Set `use_glyph` to `true` to use Nerd Font icons. Other positions support multi-line custom logos correctly.
 
 ```json
 "logo": {
   "enabled": true,
   "source": "auto",
-  "position": "right"
+  "position": "above_fetch",
+  "use_glyph": false
 }
 ```
 

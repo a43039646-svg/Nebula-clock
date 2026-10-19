@@ -49,7 +49,10 @@ def main() -> int:
     parser.add_argument("--no-stars", action="store_true", help="disable stars")
     parser.add_argument("--clock-box", action="store_true", help="enable Clock Box")
     parser.add_argument("--fetch", action="store_true", help="enable Mini Fetch")
+    parser.add_argument("--no-fetch", action="store_true", help="hide Mini Fetch")
     parser.add_argument("--fetch-box", action="store_true", help="enable Mini Fetch with a box")
+    parser.add_argument("--no-logo", action="store_true", help="hide the distro badge")
+    parser.add_argument("--logo-glyph", action="store_true", help="use Nerd Font logo glyphs instead of text badges")
     parser.add_argument("--logo", help="enable a logo; use 'auto', a theme name, or 'custom'")
     parser.add_argument("--font", choices=("digital", "block", "ascii", "dot", "thin"), help="clock font style")
     parser.add_argument("--once", action="store_true", help="print one frame and exit")
@@ -76,8 +79,16 @@ def main() -> int:
         config["clock_box"]["enabled"] = True
     if args.fetch or args.fetch_box:
         config["fetch"]["enabled"] = True
+    if args.no_fetch:
+        config["fetch"]["enabled"] = False
     if args.fetch_box:
+        config["fetch"]["enabled"] = True
         config["fetch"]["box"] = True
+    if args.no_logo:
+        config["logo"]["enabled"] = False
+    if args.logo_glyph:
+        config["logo"]["enabled"] = True
+        config["logo"]["use_glyph"] = True
     if args.logo is not None:
         config["logo"]["enabled"] = True
         config["logo"]["source"] = args.logo

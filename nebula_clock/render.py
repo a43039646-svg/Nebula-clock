@@ -136,45 +136,36 @@ def clock_size(seconds: bool, scale: int, config: dict) -> tuple[int, int]:
     return len(rows[0]), len(rows)
 
 
+def fetch_max_width(cols: int) -> int:
+    """Keep the left fetch panel compact enough to leave room for a centered clock."""
+    return max(12, min(32, (cols - 46) // 2))
+
+
 def layout(rows: int, cols: int, seconds: bool, scale_mode: str, config: dict) -> tuple[int, int, int, int, tuple[int, int, int, int]]:
+    fetch = config.get("fetch", {})
+    logo = config.get("logo", {})
+    side_panel = bool(fetch.get("enabled")) or (
+        bool(logo.get("enabled")) and logo.get("position", "right") != "above_fetch"
+    )
+    panel_width = fetch_max_width(cols) + 4 if fetch.get("enabled") else 0
+
     if scale_mode == "2":
         scale = 2
     elif scale_mode == "1":
         scale = 1
     else:
-        side_panels = bool(config.get("fetch", {}).get("enabled")) or bool(config.get("logo", {}).get("enabled"))
-        test_width = clock_size(seconds, 2, config)[0]
-        if side_panels and cols < 100:
-            scale = 1
-        else:
-            scale = 2 if cols >= test_width + 10 else 1
+        double_width = clock_size(seconds, 2, config)[0]
+        # A side panel needs breathing room on both sides of the centered clock.
+        scale = 2 if cols >= double_width + (2 * panel_width) + 8 else 1
+        if not side_panel and cols >= double_width + 10:
+            scale = 2
 
     width, height = clock_size(seconds, scale, config)
-
-    left_reserved = 0
-    right_reserved = 0
-    fetch = config.get("fetch", {})
-    logo = config.get("logo", {})
-    if fetch.get("enabled"):
-        if fetch.get("position", "left") == "right":
-            right_reserved += min(34, max(24, cols // 3)) + 5
-        else:
-            left_reserved += min(34, max(24, cols // 3)) + 5
-    if logo.get("enabled"):
-        if logo.get("position", "right") == "left":
-            left_reserved += 10
-        else:
-            right_reserved += 10
-
-    available_left = left_reserved
-    available_right = max(available_left, cols - right_reserved)
-    available_width = max(1, available_right - available_left)
-
-    if width + 2 > available_width and scale == 2 and scale_mode == "auto":
+    if width + 2 > cols and scale == 2 and scale_mode == "auto":
         scale = 1
         width, height = clock_size(seconds, scale, config)
-    left = available_left + max(0, (available_width - width) // 2)
-    left = min(left, max(0, cols - width - 1))
+
+    left = max(0, (cols - width) // 2)
     top = max(1, (rows - 10) // 2)
     return scale, width, top, left, (top - 1, top + height, left - 3, left + width + 3)
 
@@ -216,48 +207,68 @@ def logo_fallback(config: dict, theme_name: str) -> str:
     return get_logo_fallback(name, str(config["logo"].get("custom", "")))
 
 
-def render_logo(cells: dict, rows: int, cols: int, config: dict, theme_name: str, theme: dict, now: float, color: str) -> None:
-    if not config["logo"].get("enabled", False):
+def _fetch_content(theme_name: str, cols: int, items: list[tuple[str, str]] | None = None) -> tuple[list[str], int]:
+    items = items if items is not None else collect(theme_name)
+    max_width = fetch_max_width(cols)
+    clip = lambda value, limit: value if len(value) <= limit else value[: max(0, limit - 1)] + "…"
+    lines = [f"{key:<6} {clip(value, max_width - 7)}" for key, value in items]
+    width = min(max((len(line) for line in lines), default=0), max_width)
+    lines = [clip(line, width) for line in lines]
+    return lines, width
+
+
+def render_logo(cells: dict, rows: int, cols: int, config: dict, theme_name: str, theme: dict, now: float, color: str, fetch_content: tuple[list[str], int] | None = None) -> None:
+    settings = config["logo"]
+    if not settings.get("enabled", False):
         return
-    text = logo_text(config, theme_name, theme) if utf8_ok() else logo_fallback(config, theme_name)
-    position = str(config["logo"].get("position", "right"))
+    position = str(settings.get("position", "right"))
+    # A Nerd Font glyph may be missing even in a UTF-8 terminal. The fetch badge
+    # uses the portable distro abbreviation so it remains visible in ordinary fonts.
+    if position == "above_fetch" and config.get("fetch", {}).get("enabled", False):
+        text = logo_fallback(config, theme_name)
+        text = f"[{text[:10]}]"
+        fetch_lines, fetch_width = fetch_content or _fetch_content(theme_name, cols)
+        fetch_settings = config["fetch"]
+        fetch_x = 2 if fetch_settings.get("position", "left") != "right" else max(0, cols - fetch_width - 3)
+        fetch_y = max(1, (rows - len(fetch_lines)) // 2)
+        x = max(0, fetch_x + (fetch_width - len(text)) // 2)
+        y = max(0, fetch_y - 2)
+        anim = config["animation"].get("logo", {})
+        kind = anim.get("type", "none") if anim.get("enabled", False) else "none"
+        visible, strength, _ = animation_state(kind, now, anim.get("interval", 6), anim.get("duration", 2.5))
+        if visible:
+            display_color = strength if strength in {"dim", "mid", "bright"} else color
+            add_text(cells, y, x, text, color if display_color == "bright" else display_color, True)
+        return
+
+    use_glyph = bool(settings.get("use_glyph", False)) and utf8_ok()
+    text = logo_text(config, theme_name, theme) if use_glyph else logo_fallback(config, theme_name)
     anim = config["animation"].get("logo", {})
     kind = anim.get("type", "none") if anim.get("enabled", False) else "none"
     visible, strength, offset = animation_state(kind, now, anim.get("interval", 6), anim.get("duration", 2.5))
     if not visible:
         return
     display_color = strength if strength in {"dim", "mid", "bright"} else color
-    y = max(1, rows // 2 - 1)
-    width = len(text)
+    lines = text.splitlines() or [text]
+    width = max((len(line) for line in lines), default=0)
+    y = max(1, rows // 2 - len(lines) // 2)
     if position == "left":
         x = max(0, centered_start(cols, width) - 18 - offset)
     else:
         x = min(max(0, cols - width), centered_start(cols, width) + 18 + offset)
-    add_text(cells, y, x, text, display_color if display_color != "bright" else color, True)
+    for index, line in enumerate(lines):
+        add_text(cells, y + index, x, line, display_color if display_color != "bright" else color, True)
 
 
-def render_fetch(cells: dict, rows: int, cols: int, config: dict, theme_name: str, now: float, color: str, box_color: str) -> None:
+def render_fetch(cells: dict, rows: int, cols: int, config: dict, theme_name: str, now: float, color: str, box_color: str, fetch_content: tuple[list[str], int] | None = None) -> None:
     settings = config["fetch"]
     if not settings.get("enabled", False):
         return
-    items = collect(theme_name)
-    max_width = max(20, min(32, cols // 3))
-
-    def clip(value: str, limit: int) -> str:
-        if len(value) <= limit:
-            return value
-        return value[: max(0, limit - 1)] + "…"
-
-    lines = [f"{key:<6} {clip(value, max_width - 7)}" for key, value in items]
-    width = min(max((len(line) for line in lines), default=0), max_width)
-    lines = [clip(line, width) for line in lines]
+    lines, width = fetch_content or _fetch_content(theme_name, cols)
     height = len(lines)
     y = max(1, (rows - height) // 2)
     position = settings.get("position", "left")
-    if position == "right":
-        x = max(0, cols - width - 3)
-    else:
-        x = 2
+    x = max(0, cols - width - 3) if position == "right" else 2
     if settings.get("box", False):
         add_box(cells, y - 1, x - 1, y + height, x + width, "rounded", box_color)
     for i, line in enumerate(lines):
@@ -317,8 +328,11 @@ def build_cells(rows: int, cols: int, now_struct, sky: Sky | None, config: dict,
         badge_text = f"[ {badge} ]"
         add_text(cells, top + len(digits) + 4, centered_start(cols, len(badge_text)), badge_text, "title", True)
 
-    render_logo(cells, rows, cols, config, theme_name, colors, time.monotonic(), "logo")
-    render_fetch(cells, rows, cols, config, theme_name, time.monotonic(), "fetch", "box")
+    fetch_content = None
+    if config.get("fetch", {}).get("enabled", False):
+        fetch_content = _fetch_content(theme_name, cols, collect(theme_name))
+    render_logo(cells, rows, cols, config, theme_name, colors, time.monotonic(), "logo", fetch_content)
+    render_fetch(cells, rows, cols, config, theme_name, time.monotonic(), "fetch", "box", fetch_content)
     render_custom_text(cells, rows, cols, config, time.monotonic(), "custom")
     return cells
 

@@ -22,13 +22,14 @@ DEFAULT_CONFIG = {
         "fallback_block": "#",
     },
     "logo": {
-        "enabled": False,
+        "enabled": True,
         "source": "auto",
-        "position": "right",
+        "position": "above_fetch",
+        "use_glyph": False,
         "custom": "",
     },
     "fetch": {
-        "enabled": False,
+        "enabled": True,
         "box": False,
         "position": "left",
     },
