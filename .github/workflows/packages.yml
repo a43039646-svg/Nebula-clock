@@ -1,0 +1,30 @@
+name: Build Linux packages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install packaging tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake dpkg-dev rpm
+      - name: Build packages
+        run: |
+          cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/usr
+          cmake --build build --target package
+          cpack --config build/CPackConfig.cmake -G RPM
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nebula-clock-linux-packages
+          path: build/nebula-clock-2.0.0-Linux.*
+          if-no-files-found: error
+          retention-days: 30
