@@ -277,3 +277,5 @@ cmake --build build --target package
 ```
 
 Arch Linux users can build the VCS package from `packaging/arch/PKGBUILD` with `makepkg -si`. The packages require Python 3.10 or newer and include the theme data; no external Python modules are required.
+
+The GitHub Actions workflow **Build Linux packages** creates DEB, RPM and TGZ artifacts on pushes to `main` and can also be run manually. Download its output from the workflow run's **Artifacts** section; artifacts are retained for 30 days.
