@@ -1,0 +1,27 @@
+# Maintainer recipe for the latest Nebula Clock source from GitHub.
+pkgname=nebula-clock-git
+pkgver=2.0.0
+pkgrel=1
+pkgdesc='Customizable terminal clock and Linux distribution theme utility'
+arch=('any')
+url='https://github.com/a43039646-svg/Nebula-clock'
+license=('EPL-2.0')
+depends=('python')
+makedepends=('git' 'python-build' 'python-installer' 'python-setuptools')
+source=("$pkgname::git+$url.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/$pkgname"
+  printf '2.0.0.r%s.g%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd "$srcdir/$pkgname"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+}
