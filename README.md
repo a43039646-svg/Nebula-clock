@@ -266,3 +266,7 @@ nebula_clock/
 ## 📜 License
 
 Eclipse Public License 2.0. See [LICENSE](LICENSE).
+
+## 📦 Linux packages
+
+Nebula Clock is a pure Python program and does not need GTK or a compiled native binary. Arch Linux users can build the VCS package from `packaging/arch/PKGBUILD` with `makepkg -si`. On other distributions, the source install above works with Python 3.10 or newer; no external Python modules are required.
